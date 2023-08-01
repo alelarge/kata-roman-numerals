@@ -1,25 +1,19 @@
 import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
+
 
 class RomanNumeralsTest {
     @Test
-    fun `most commonly used Roman symbols`() {
+    fun `when 1 have 1, return "I`() {
         //given
-        val commonlyRomanSymbols = mapOf(
-            1 to "I",
-            5 to "V",
-            10 to "X",
-            50 to "L",
-            100 to "C",
-            500 to "D",
-            1000 to "M",
-        )
+        val total = 1
         //when
-        commonlyRomanSymbols.forEach { (input, expected) ->
-            assertEquals<String>(expected, RomanNumerals.NumeralConverter.convertToRoman(input))
-        }
+        val actual = toRomanNumeral(total)
+        //then
+        assertEquals("I", actual)
     }
 
-    private fun <T> assertEquals(expected: T, actual: Unit) {
+    private fun toRomanNumeral(total: Int) {
 
     }
 }
