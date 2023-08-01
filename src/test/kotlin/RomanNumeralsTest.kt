@@ -13,8 +13,8 @@ class RomanNumeralsTest {
         assertEquals("I", actual)
     }
 
-    private fun toRomanNumeral(total: Int) {
-
+    private fun toRomanNumeral(total: Int) : String {
+        return "I"
     }
 }
 
