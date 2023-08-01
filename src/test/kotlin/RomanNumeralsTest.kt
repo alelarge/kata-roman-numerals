@@ -7,14 +7,11 @@ class RomanNumeralsTest {
     fun `when 1 have 1, return "I`() {
         //given
         val total = 1
+        val romanNumerals = RomanNumerals()
         //when
-        val actual = toRomanNumeral(total)
+        val actual = romanNumerals.toRomanNumeral(total)
         //then
         assertEquals("I", actual)
-    }
-
-    private fun toRomanNumeral(total: Int) : String {
-        return "I"
     }
 }
 
